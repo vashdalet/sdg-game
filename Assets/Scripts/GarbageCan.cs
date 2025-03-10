@@ -8,6 +8,8 @@ public class GarbageCan : MonoBehaviour
     public int totalGarbage = 0;
     private GameObject player;
     private PlayerMovement playerScript;
+    public GameObject Jbutton;
+
     void Update()
     {
         if(player != null && Input.GetKeyDown(KeyCode.J))
@@ -22,6 +24,7 @@ public class GarbageCan : MonoBehaviour
         {
             player = collision.gameObject;
             playerScript = player.GetComponent<PlayerMovement>();
+            Jbutton.SetActive(true);
         }
     }
 
@@ -30,6 +33,7 @@ public class GarbageCan : MonoBehaviour
         if(collision.tag == "Player")
         {
             player = null;
+            Jbutton.SetActive(false);
         }
     }
 }

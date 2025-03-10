@@ -7,6 +7,7 @@ TagManager:
   - Collectible
   - TrashBin
   - Lower Bound
+  - Canvas
   layers:
   - Default
   - TransparentFX
@@ -47,9 +48,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1570571965
-    locked: 0
   - name: UI
     uniqueID: 646968853
+    locked: 0
+  - name: Player
+    uniqueID: 1570571965
     locked: 0

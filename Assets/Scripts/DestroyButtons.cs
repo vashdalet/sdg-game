@@ -16,20 +16,20 @@ public class DestroyButtons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (collectible == null)
-        {
-            Destroy(gameObject);
-        }
+        // if (collectible == null)
+        // {
+        //     Destroy(gameObject);
+        // }
 
-        if (remainingTime > 0)
-        {
-            remainingTime -= Time.deltaTime;
-        }
+        // if (remainingTime > 0)
+        // {
+        //     remainingTime -= Time.deltaTime;
+        // }
         
-        else if (remainingTime < 0)
-        {
-            remainingTime = 0;
-            Destroy(gameObject);
-        }
+        // else if (remainingTime < 0)
+        // {
+        //     remainingTime = 0;
+        //     Destroy(gameObject);
+        // }
     }
 }

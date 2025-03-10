@@ -18,9 +18,9 @@ public class Timer : MonoBehaviour
         }
         else if (remainingTime < 0 && SceneManager.GetActiveScene().name == "Level 1")
         {
-            remainingTime = 0;
-            SceneController.instance.NextLevel();
-            StopAllCoroutines();
+            // remainingTime = 0;
+            // SceneController.instance.NextLevel();
+            // StopAllCoroutines();
         }
         else
         {
