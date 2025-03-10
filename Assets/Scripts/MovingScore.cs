@@ -24,6 +24,7 @@ public class MovingScore : MonoBehaviour
         scoreText.text = scoreNumber.ToString();
     }
 
+    // Just an example
     void LateUpdate()
     {
         Vector3 objectiveScreenPos = targetObject.transform.position;
