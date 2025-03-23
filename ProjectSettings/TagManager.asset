@@ -8,6 +8,8 @@ TagManager:
   - TrashBin
   - Lower Bound
   - Canvas
+  - GameManager
+  - Ship
   layers:
   - Default
   - TransparentFX

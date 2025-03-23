@@ -12,13 +12,13 @@ public class ScoreDisplay : MonoBehaviour
     private int scoreNumber;
     void Start()
     {
-        trashBin = GameObject.FindGameObjectWithTag("TrashBin");
-        garbageCan = trashBin.GetComponent<GarbageCan>();
+        // trashBin = GameObject.FindGameObjectWithTag("TrashBin");
+        // garbageCan = trashBin.GetComponent<GarbageCan>();
     }
     // Update is called once per frame
     void Update()
     {
-        scoreNumber = garbageCan.totalGarbage;
+        scoreNumber = GarbageCan.totalGarbage;
         scoreText.text = scoreNumber.ToString();
     }
 }

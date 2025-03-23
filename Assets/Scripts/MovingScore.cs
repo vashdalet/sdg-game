@@ -14,17 +14,16 @@ public class MovingScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetScript = targetObject.GetComponent<ShipMovement>();
+        //targetScript = targetObject.GetComponent<ShipMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreNumber = targetScript.itemsCollected;
+        scoreNumber = ShipMovement.itemsCollected;
         scoreText.text = scoreNumber.ToString();
     }
 
-    // Just an example
     void LateUpdate()
     {
         Vector3 objectiveScreenPos = targetObject.transform.position;

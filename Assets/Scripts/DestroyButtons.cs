@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DestroyButtons : MonoBehaviour
 {
-    public GameObject collectible;
-    private float remainingTime = 15;
+    //public GameObject collectible;
+    //private float remainingTime = 15;
     // Start is called before the first frame update
     void Start()
     {

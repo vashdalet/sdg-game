@@ -16,11 +16,11 @@ public class Timer : MonoBehaviour
         {
             remainingTime -= Time.deltaTime;
         }
-        else if (remainingTime < 0 && SceneManager.GetActiveScene().name == "Level 1")
+        else if (remainingTime < 0)
         {
-            // remainingTime = 0;
-            // SceneController.instance.NextLevel();
-            // StopAllCoroutines();
+            remainingTime = 0;
+            SceneController.instance.NextLevel();
+            StopAllCoroutines();
         }
         else
         {

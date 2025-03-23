@@ -5,15 +5,22 @@ using UnityEngine;
 
 public class GarbageCan : MonoBehaviour
 {
-    public int totalGarbage = 0;
+    public GameObject audioManager;
+    private AudioManager audioManagerScript;
+    public static int totalGarbage = 0;
     private GameObject player;
     private PlayerMovement playerScript;
     public GameObject Jbutton;
 
+    void Start()
+    {
+        audioManagerScript = audioManager.GetComponent<AudioManager>();
+    }
     void Update()
     {
         if(player != null && Input.GetKeyDown(KeyCode.J))
         {
+            audioManagerScript.PlaySFX(audioManagerScript.trashbin);
             totalGarbage += playerScript.itemsInHands;
             playerScript.itemsInHands = 0;
         }

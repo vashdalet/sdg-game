@@ -10,7 +10,7 @@ public class CollectibleMovement : MonoBehaviour
     public float speed;
 
     public GameObject button;
-    private int timesToDisplay = 2;
+    static int timesToDisplay = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,8 @@ public class CollectibleMovement : MonoBehaviour
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
+
+        Debug.Log(timesToDisplay);
         
     }
 
@@ -34,12 +36,10 @@ public class CollectibleMovement : MonoBehaviour
         }
         else if (collision.tag == "Player" && SceneManager.GetActiveScene().name == "Level 1" && timesToDisplay > 0)
         {
-            Debug.Log("I'm here");
-            Debug.Log(button);
             timesToDisplay -= 1;
             GameObject spawnedButton = Instantiate(button);
             spawnedButton.transform.position = gameObject.transform.position;
-            spawnedButton.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform, false);
+            spawnedButton.transform.SetParent(gameObject.transform);
         }
     }
 

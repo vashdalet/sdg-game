@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
+    public GameObject audioManager;
+    private AudioManager audioManagerScript;
     private float horizontal;
     private Rigidbody2D rb;
     private float speed = 4;
     //private float xLeft = -10;
     //private float xRight = 10;
 
-    public int itemsCollected;
+    public static int itemsCollected;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioManagerScript = audioManager.GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class ShipMovement : MonoBehaviour
     {
         if(collision.tag == "Collectible")
         {
+            audioManagerScript.PlaySFX(audioManagerScript.collecting);
             Destroy(collision.gameObject);
             itemsCollected++;
         }

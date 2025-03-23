@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject audioManager;
+    private AudioManager audioManagerScript;
     private float horizontal;
     private float vertical;
     private Rigidbody2D rb;
@@ -15,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioManagerScript = audioManager.GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -27,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(currentCollision != null && Input.GetKeyDown(KeyCode.J) && itemsInHands < 2)
         {
+            audioManagerScript.PlaySFX(audioManagerScript.collecting);
             itemsInHands++;
             Destroy(currentCollision.gameObject);
         }
