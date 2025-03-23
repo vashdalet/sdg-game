@@ -47,11 +47,17 @@ TagManager:
   - name: Background
     uniqueID: 4272071815
     locked: 0
+  - name: New Layer 5
+    uniqueID: 1597969693
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: UI
     uniqueID: 646968853
+    locked: 0
+  - name: Collectibles
+    uniqueID: 1557910117
     locked: 0
   - name: Player
     uniqueID: 1570571965
