@@ -21,11 +21,11 @@ public class SpawnerScene1 : MonoBehaviour
             float randomXPos = Random.Range(-9.4f, 9.5f);
             if (randomXPos < -7.1f)
             {
-                randomYPos = Random.Range(-0.3f, 3.2f); 
+                randomYPos = Random.Range(1.2f, 3.2f); 
             }
             else
             {
-                randomYPos = Random.Range(-3.6f, 3.2f);
+                randomYPos = Random.Range(0.5f, 3.2f);
             }
             GameObject spawnedCollectible = Instantiate(collectibles[randomIndex]);
             spawnedCollectible.transform.position = new Vector3 (randomXPos, randomYPos, 0);

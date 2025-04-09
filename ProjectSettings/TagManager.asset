@@ -62,3 +62,6 @@ TagManager:
   - name: Player
     uniqueID: 1570571965
     locked: 0
+  - name: Jbutton collectibles
+    uniqueID: 2318032007
+    locked: 0
