@@ -12,10 +12,10 @@ There is a timer on both levels. When the timer ends on Level 1, Level 2 starts 
 
 ## Visuals
 * Level 1
-[Overview of the Level 1](level1.png)
+[Overview of the Level 1](screenshots/level1.png)
 
 * Level 2 
-[Overview of the Level 2](level2.png)
+[Overview of the Level 2](screenshots/level2.png)
 
 * Final menu
-[Overview of the menu](menu.png)
+[Overview of the menu](screenshots/menu.png)
