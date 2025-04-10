@@ -20,7 +20,7 @@ public class SpawnManager : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(1, 3));
             int randomIndex = Random.Range(0, collectibleReference.Length);
-            float randomXPos = Random.Range(-9.0f, 9.0f);
+            float randomXPos = Random.Range(-8.0f, 8.0f);
 
             GameObject spawnedCollectible = Instantiate(collectibleReference[randomIndex]);
 
